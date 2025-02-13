@@ -18,12 +18,14 @@
 body,
 html {
     height: 100%;
-    background-color: #1f1f1f;
+    background-color: #0e0d0d;
 }
 .card-container {
     padding: 20px;
     width: 90%;
-    margin: auto;
+    margin: 3% auto 0 auto;
+    border-radius: 10px;
+    background-color: var(--gray-dark-color);
 }
 .card_section {
     display: flex;
@@ -76,5 +78,10 @@ html {
         filter: drop-shadow(0 0 0.75rem rgb(20, 220, 167));
         scale: 1.1;
         color: rgb(20, 220, 167);
+    }
+}
+@media (min-width: 600px) {
+    .card-container {
+        width: 600px;
     }
 }

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root {
+    --gray-dark-color: #1f1f1f;
+    --gray-soft: #333333;
+    --green-spark: #b3ce62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Inter;
+}
+body,
+html {
+    height: 100%;
+    background-color: #1f1f1f;
+}
+.card-container {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+.card_section {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    border-radius: 5%;
+    & header {
+        text-align: center;
+        & img {
+            border-radius: 50%;
+            width: 60%;
+            margin-bottom: 10%;
+        }
+        & h1 {
+            color: #ffff;
+            margin-bottom: 2%;
+        }
+        & .avatar_ubi {
+            color: var(--green-spark);
+            margin-bottom: 10%;
+        }
+        & .avatar_ocupation {
+            color: #ffff;
+        }
+        & img:hover {
+            transition: all 0.5s ease-out;
+            filter: drop-shadow(0 0 0.75rem rgb(120, 220, 20));
+        }
+    }
+}
+.social_buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 5%;
+    & button {
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #333333;
+        border: none;
+        width: 80%;
+        height: 3rem;
+        margin-top: 5%;
+        color: #ffff;
+        font-size: 1rem;
+    }
+    & button:hover {
+        transition: all 0.5s ease-out;
+        filter: drop-shadow(0 0 0.75rem rgb(20, 220, 167));
+        scale: 1.1;
+        color: rgb(20, 220, 167);
+    }
+}
